@@ -1,0 +1,12 @@
+{
+"type":"book",
+"data":{
+"name":"Example Book",
+"author":"Joe Wilson",
+"description":"Nothing in this Book",
+"cover":"cover.png"
+},
+"sites":{
+"page1":"name of page 1"
+}
+}
