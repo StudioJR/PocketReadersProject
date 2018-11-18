@@ -1,16 +1,17 @@
-//book loading
-
-var search = window.location.search;
-var book_src = search.replace("?","");
-var book_path = "../../"+book_src+"/";
-var xmlhttp = new XMLHttpRequest();
+var search_btn = document.getElementById("search");
+var book_name_ipf = document.getElementById("name");
+search_btn.addEventListener("click", function () {
+check()
+},true);
+function check() {
+var loc = book_name_ipf.value + "/content.json";
+    var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var json_data = JSON.parse(this.responseText);
         //console.log("Json parsed data is: " + JSON.stringify(json_data));
 if (json_data["type"] == "book") {
-//display book information
-
+window.location=".com/thepocketreadersproject/book.html?"+book_name_ipf.value;
 } else {
 alert("No Valid Book found");
 }
@@ -18,5 +19,8 @@ alert("No Valid Book found");
 alert("Unfortunately there is no Book with this Name");
 }
     };
-xmlhttp.open("GET", book_path+"content.json", true);
+xmlhttp.open("GET", loc, true);
 xmlhttp.send();
+
+
+}
