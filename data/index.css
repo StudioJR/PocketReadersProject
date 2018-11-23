@@ -1,0 +1,26 @@
+.logo {
+width: 50%;
+height: auto;
+margin: 25%;
+margin-bottom: 10%;
+}
+.name {
+margin-left:40%;
+margin-right:10%;
+font-size: 200%;
+width:50%;
+height:auto;
+font-family: "Times New Roman", Times, serif;
+display:flex;
+}
+.bookname {
+width: 50%;
+height:auto;
+margin-left:25%;
+margin-right:25%;
+}
+.search {
+font-size: 200%;
+width:50%;
+margin-left:48%;
+}

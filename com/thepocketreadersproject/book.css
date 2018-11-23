@@ -1,0 +1,28 @@
+body {
+background-image: url("../../data/wood.png");
+background-size:cover;
+color:white;
+
+}
+.cover {
+width:50%;
+height:auto;
+
+margin-top:10%;
+}
+.name {
+font-size: 400%;
+font-family: "Times New Roman", Times, serif;
+}
+.author {
+font-size: 200%;
+}
+.desc {
+font-size: 200%;
+overflow-x:scroll;
+word-wrap: break-word;
+width:50%;
+}
+.start {
+font-size: 750%;
+}
